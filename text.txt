@@ -1,8 +1,0 @@
-1. https://console.cloud.google.com/apis/credentials?project=teamstadservicemail 
-    uppdatera eller gör en ny OAuth 2.0 Client IDs lägg till https://developers.google.com/oauthplayground/ för Authorized redirect URIs
-
-2. gå in på https://developers.google.com/oauthplayground/ längst upp till höger OAuth 2.0 configuration ( kugghjul ) -> Use your own OAuth credentials som du har fått från ovan ^
-
-3. till vänster , gör step 1 , step 2 och så får du din refreshtoken. DONE om inte det fungerar gör om detta igen.
-
-4.
