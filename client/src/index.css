@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap'); /* LOGO*/
+:root {
+  --color-yellowMain: #ffeba7;
+  --color-whiteText: rgb(255, 255, 255);
+  --color-greySection:rgb(73, 73, 73);    
+  --color-greenSecond:green;    
+  --color-greenBtn:rgb(41, 160, 41);    
+
+  --font-Main: 'Cabin', sans-serif;
+
+  --color-black-button: rgb(61, 61, 61);
+  --color-black-button-hover: rgb(90, 90, 90);
+  --color-black-nav: rgb(54, 54, 54);
+  --color-black-header: rgba(54, 54, 54, 0.938);
+
+  
+  --width-nav-button: 170px;
+  --height-nav-button: 80px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.bg {
+  background-attachment: fixed;
+  background-position:center;
+  background-size: cover;
+  background-repeat: repeat;
+  
+  width: 100vw;
+  max-width:100%;
+  
+}
+
+.button {
+  font-family: 'Cabin', sans-serif;
+}
+
+.title__main {
+  font-family: var(--font-Main);
+  
+}
+.p__main {
+  font-family: var(--font-Main);
+  white-space: break-spaces;
+}
+
+
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

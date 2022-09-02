@@ -1,0 +1,284 @@
+/*? -------------------------NAVBAR------------------- */
+
+
+  .component__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    background-color: var(--color-black-nav);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    
+
+    width: 100%;
+    height: var(--height-nav-button); 
+  }
+  .navbar__fullscreen {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-section {
+    width: var(--width-nav-button);
+    height: var(--height-nav-button);
+    z-index: 2;
+  }
+  .navbar-section button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    background-color: var(--color-black-button);
+    color: white;
+    border: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    
+    width: 100%;
+    height: 100%;
+
+  }
+  .navbar-section button:hover{
+    background-color: var(--color-black-button-hover);
+    
+    transition: all 0.5s linear;
+  }
+
+  /* SUBMENU */
+  .navbar-submenu {    
+    pointer-events: none;
+    opacity: 0;
+    padding-top: 5.5rem;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  .navbar-submenu button {
+    width: var(--width-nav-button);
+    height: var(--height-nav-button);
+    margin-bottom: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 0.2rem;
+    
+  }
+  .navbar-section:hover .navbar-submenu {
+    opacity: 1;
+    padding-top: 0.5rem;
+    pointer-events: all;
+    
+  }
+  
+  /* HOVER LINE*/
+  .navbar-hoverline {
+    position: absolute;
+    background-color: green;
+    z-index: 2;  
+  
+    width: var(--width-nav-button);
+    height: 3px;
+    
+    transform: translateX(calc(var(--width-nav-button)*-2 )); /* START POSITION*/
+    transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  .component__navbar div:nth-child(2):hover ~ .navbar-hoverline {
+    transform: translateX(calc(var(--width-nav-button)*-1 ));
+    background-color: rgb(238, 191, 103);
+  }
+  .component__navbar div:nth-child(3):hover ~ .navbar-hoverline {
+    transform: translateX(0);
+  }
+  .component__navbar div:nth-child(4):hover ~ .navbar-hoverline {
+    transform: translateX(calc(var(--width-nav-button)*1 ));
+  }
+  .component__navbar div:nth-child(5):hover ~ .navbar-hoverline {
+    transform: translateX(calc(var(--width-nav-button)*2 ));
+  }
+
+  /* ICON FOR DROPDOWN */
+  .navbar-icon {
+    margin-right: 0.2rem;
+    transform: rotate(270deg);
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  .component__navbar div:nth-child(2):hover .navbar-icon {
+    transform: rotate(360deg);
+  }
+/* LOGO */
+.component__navbar-logo {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
+
+.navbar__fullscreen #react-icon {
+  margin-right: 0.2rem;
+}
+
+
+
+
+/** ----------------------SMALLSCREEN_DROPDOWN---------------------- */
+.navbar__smallcreen {
+  display: none;
+}
+.component__dropdown_1{
+  position: relative;
+  text-align: center;
+}
+.component__dropdown_1 input[type="checkbox"]{
+  display: none;
+}  
+/** ----------------------BUTTONS---------------------- */
+.component__dropdown_1 button {
+  background-color:  var(--color-greySection) ;
+  border: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.component__dropdown_1 button,
+.component__dropdown_1 label {
+  height: 40px;
+  transition: all 0.2s linear;
+}
+.component__dropdown_1 button:hover,
+.component__dropdown_1 label:hover {
+  background-color: var( --color-greenBtn);
+  border-radius: 0.5rem;
+  color: black;
+  
+}
+/** ----------------------BUTTONS---------------------- */
+.dropdown1 + label{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.5rem;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+
+  background-color: var( --color-black-button);
+  color: white;
+  height: 50px;
+  width: 150px;
+
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+  transition: transform 0.5s ease-in-out;
+}
+.dropdown1 ~ label .AiOutlineArrowDown{
+  
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+.dropdown1:checked ~ label .AiOutlineArrowDown{
+  transform: rotate(180deg);
+  
+}
+.dropdown1__section{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  pointer-events: none;
+
+  background-color: var(--color-greySection);
+  color: white;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+
+  padding: 5px;
+  width: 140px;
+  
+  
+  border-radius: 0.5rem;
+  
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.5s ease-in-out;
+
+}
+.dropdown1:checked ~.dropdown1__section{
+  opacity: 1;    
+  transform: translateY(0px);
+  pointer-events:all;
+}
+/** -----------------------SUB SECTION---------------------- */
+.section-dropdown1-sub {
+  display: flex;
+  flex-direction: column;
+  
+  pointer-events: none;
+
+  max-height: 0;
+  margin-left: 1rem;
+
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.dropdown1-sub:checked ~ .section-dropdown1-sub{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 5000px;
+}
+.dropdown1-sub ~ label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown1-sub ~ label .AiOutlinePlus{
+  font-size: 18px;
+  transform: rotate(0);
+  transition: transform 0.3s ease-in-out;
+}
+.dropdown1-sub:checked ~ label .AiOutlinePlus{
+  font-size: 20px;
+  transform: rotate(45deg);    
+}
+
+@media screen and (max-width: 1300px) {
+  .component__navbar {   
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .component__navbar {   
+    justify-content: flex-end;
+  } 
+  :root {
+    --width-nav-button: 100px;
+  }
+  .navbar-submenu button{
+    font-size: 15px;
+    flex-direction: column;
+    
+  }
+  .navbar-submenu button #react-icon {
+    font-size: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 730px) {
+ 
+  .navbar__smallcreen {
+    display: block;
+  }
+  .navbar__fullscreen {
+    display: none;
+  }
+  .component__navbar-logo {
+    transform: scale3d(0.75,0.75,0.75);
+  }
+  
+}

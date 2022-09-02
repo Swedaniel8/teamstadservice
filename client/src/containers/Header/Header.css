@@ -1,0 +1,239 @@
+/*? -------------------------HEADER------------------- */
+.container__header {   
+   flex-direction: column;
+
+   background-image: url('../../assets/teamstad1.jpg');    
+   animation: bg-pic1 50s ease-in-out 0s infinite ;
+   font-family: var(--font-Main);
+   padding-bottom: 5rem;
+   
+}
+
+
+
+
+@keyframes bg-pic1 {
+    0% {
+        background-image: url('../../assets/teamstad1.jpg');
+    }
+    24% {
+        background-image: url('../../assets/teamstad1.jpg');
+    }
+    25% {
+        background-image: url('../../assets/teamstad2.jpg');
+    }
+    49% {
+        background-image: url('../../assets/teamstad2.jpg');
+    }
+    50% {
+        background-image: url('../../assets/teamstad3.jpg');
+    }
+    74% {
+        background-image: url('../../assets/teamstad3.jpg');
+    }
+    75% {
+        background-image: url('../../assets/teamstad1.jpg');
+    }
+    100% {
+        background-image: url('../../assets/teamstad1.jpg');
+    }
+}
+
+/* header__intro */
+.header__intro {
+    background-color:var(--color-black-header);    
+    
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 0px 0px 3px;
+    color: white;
+    padding: 2rem;
+    width: calc(1210px - 4rem); /*! wtf?? length of each box dont match???*/
+    margin-top: 12rem;
+}
+.title__line {
+    width: 240px;
+    height: 2px;
+    background-color: var(--color-greenSecond);
+    margin: 0.2rem 0 0.5rem 0;
+}
+.header__intro {
+    width: 1000px;
+
+}
+.header__intro-checklist p{
+    display: flex;
+    margin: 0.5rem 0;
+}
+.header__intro-checklist #react__icon{
+    color: var(--color-greenSecond);
+    font-size: 20px;
+    margin-right: 0.3rem;
+}
+
+/* header__info */
+.header__info {    
+    flex-direction: column;
+    position: relative;
+    background-color:var(--color-black-header);    
+    
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 0px 0px 3px;
+    color: white;
+
+    padding: 2rem;
+    margin-top: 5rem;
+    width: 1000px;
+
+    
+}
+.header__info-buttons{
+    display: flex;
+    position: absolute;
+
+    top:0;
+    left:0;
+}
+
+.header__info-buttons input[type="radio"]{ 
+    display: none;
+}
+.header__info-buttons label{ 
+    cursor: pointer;
+
+    background-color:rgba(139, 139, 139, 0.438);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 45px;
+    
+    padding: 1rem;
+    transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* in order to a toggle switch to work! THESE TO CSS OBJECTS*/
+.header__info-buttons input:nth-child(1):checked ~ label:nth-child(2){
+    background-color: var(--color-greenBtn);
+    
+} 
+.header__info-buttons input:nth-child(3):checked ~ label:nth-child(4){
+    background-color: var(--color-greenBtn);
+    
+} 
+
+
+.header__info-sections-services {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    
+    margin-top: 1rem;
+
+    
+}
+
+
+
+
+.header__info-section {
+    
+    
+
+}
+.header__info-section-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    align-items: center;
+    
+    cursor: pointer;
+
+    margin-right: 2rem;
+    width: 100px;
+    
+}
+.header__info-section-icon h4{
+    
+    
+}
+
+
+/* Regular react svg import*/
+.header__info-section-icon > #react__icon {
+    background-color: rgb(39, 39, 39);
+    color: var(--color-greenSecond);
+
+    height: 40px;
+    width: 40px;
+    padding: 0.7rem;
+    border-radius: 50%;
+
+    overflow: visible;
+    transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.header__info-section-icon:hover #react__icon { 
+    background-color: var(--color-black-button-hover);
+    color: rgb(0, 192, 0);
+    
+}
+/* .svg file, react svg import*/
+.header__info-section-icon > #react__icon-svg {
+    
+    background-color: rgb(39, 39, 39);
+    fill: var(--color-greenSecond);
+    stroke: var(--color-greenSecond);
+
+    height: 40px;
+    width: 40px;
+    
+    padding: 0.7rem;
+    
+    border-radius: 50%;
+    
+    overflow: visible;
+    transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.header__info-section-icon:hover #react__icon-svg {
+    fill: rgb(0, 192, 0);
+    stroke: rgb(0, 192, 0);
+    background-color: var(--color-black-button-hover);
+}
+.header__info-section-text{
+    max-width: 1000px;
+    
+}
+@media screen and (max-width: 1024px) {
+    
+    .header__intro,
+    .header__info {
+      width: 600px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+ 
+    .header__intro,
+    .header__info {
+      width: 300px;
+    }
+    .title__main {
+        margin-top: 2rem;
+    }
+    .header__info-buttons{
+        left:calc(150px - 43.5px);
+    }
+    
+    .header__info-sections-company {
+        height: 1000px;
+        overflow:scroll;
+    }
+    .header__info-section-icon h4 {
+        font-size: 11px;
+    }
+    .header__info-section-text {
+        width: 180px;
+        font-size: 12px;
+        padding-right: 1rem ;
+    }
+    .header__info-section-icon #react__icon{
+        transform: scale3d(0.8, 0.8, 0.8);
+    }
+  }

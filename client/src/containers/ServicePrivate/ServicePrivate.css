@@ -1,0 +1,119 @@
+/*? -------------------------ServicePrivate------------------- */
+.container__ServicePrivate {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url('../../assets/teamstad1.jpg');    
+    animation: bg-pic1 50s ease-in-out 0s infinite ;
+    font-family: var(--font-Main);
+    padding-bottom: 5rem;
+    height: auto;
+}
+.ServicePrivate__section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+    background-color:var(--color-black-header);    
+    
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 0px 0px 3px;
+    color: white;
+    padding: 2rem;
+    width: calc(1210px - 4rem); /*! wtf?? length of each box dont match???*/
+    
+    margin-top: 12rem;
+}
+.ServicePrivate__section-form {
+    position: sticky;
+    top:10px
+}
+.ServicePrivate__section-info {
+    max-width: 500px;    
+}
+.ServicePrivate__section-info .title__line{
+    width: 345px;
+}
+.ServicePrivate__section-input form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.ServicePrivate__section-input form input,
+.ServicePrivate__section-input form select {
+    max-width: 250px;
+    border-radius: 0.21em;
+    padding: 0.1rem;
+    border:none;
+}
+.ServicePrivate__section-input form textarea {
+    max-width: 350px;
+    height: 100px;
+    margin-bottom: 1rem;
+    border-radius: 0.21em;
+    padding: 0.1rem;
+    border:none;
+
+}
+.ServicePrivate__section-input form label{
+    margin-top: 0.5rem;
+}
+*:focus {
+    outline: none;
+}
+.ServicePrivate__section-input-name {
+    display: flex;
+    gap:1rem
+}
+.ServicePrivate__section-input-name div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* INFO */
+.ServicePrivate__section__explain{
+    width: 500px;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .ServicePrivate__section {
+        flex-direction: column;
+        width: 600px;
+        
+    }
+    .ServicePrivate__section-form {
+        position:unset;
+    }
+    .ServicePrivate__section__explain {
+        
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 730px) {
+ 
+    .ServicePrivate__section {
+        flex-direction: column;
+        width: 300px;
+        
+    }
+    .ServicePrivate__section-info h1{
+        font-size: 20px;
+    }
+    .ServicePrivate__section-info .title__line{
+        width: 215px;
+    }
+    .ServicePrivate__section__explain {
+        width: 300px;    
+    }
+    .ServicePrivate__section__explain h3{
+        font-size: 15px;
+    }
+    .ServicePrivate__section__explain p{
+        font-size: 12px;
+    }
+    .ServicePrivate__section-input-name {
+        flex-direction: column;
+        gap:0rem
+    }
+  }

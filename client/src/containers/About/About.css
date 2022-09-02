@@ -1,0 +1,116 @@
+
+.container__about {
+    background-image: url('../../assets/teamstad1.jpg'); 
+    flex-direction: column;
+}
+.about__title p{
+    white-space: break-spaces;
+}
+.title__line {
+    width: 240px;
+    height: 2px;
+    background-color: var(--color-greenSecond);
+    margin: 0.2rem 0 0.5rem 0;
+}
+/* about__info */
+.about__info {    
+    flex-direction: column;
+
+    background-color:var(--color-black-header);    
+    
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 0px 0px 3px;
+    color: white;
+
+    padding: 2rem;
+    margin: 5rem 0;
+    width: 1200px;
+}
+.about__info h3{
+    margin-top: 2rem;
+}
+.about__info p{
+    margin-bottom: 0.5rem;
+}
+
+/* about__map */
+.about__map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color:var(--color-black-header);    
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 0px 0px 3px;
+    color: white;
+
+    
+
+    width: 1200px;
+    
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.about__map-rowSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+
+}
+.about__map-rowSection ul {
+    font-size: 20px;
+    
+}
+.about__map-rowSection li {
+    margin-left: 1.2rem;
+}
+.about__map .googleMap{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.about__map-rowSection .googleMap-smallscreenMap {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    
+    .about__info {
+      width: 600px;
+    }
+    .about__map {
+        width: 600px;
+        
+    }
+    .about__map-rowSection {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .about__map-rowSection .title__line,
+    .about__map-rowSection p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) { 
+    .about__info {
+        width: 300px;
+    }
+    .about__map {
+        width: 300px;
+        
+    }
+    .about__map-rowSection .googleMap-fullscreenMap {
+        display: none;
+    }
+    .about__map-rowSection .googleMap-smallscreenMap {
+        display: initial;
+    }
+}

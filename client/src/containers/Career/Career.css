@@ -1,0 +1,138 @@
+/*? -------------------------CAREER------------------- */
+.container__career {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url('../../assets/teamstad1.jpg');    
+    animation: bg-pic1 50s ease-in-out 0s infinite ;
+    font-family: var(--font-Main);
+    padding-bottom: 5rem;
+    
+}
+.career__section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color:var(--color-black-header);    
+    
+    box-shadow: rgba(121, 121, 121, 0.3) 0px 0px 0px 3px;
+    color: white;
+    padding: 2rem;
+    width: calc(1210px - 4rem); /*! wtf?? length of each box dont match???*/
+    margin-top: 12rem;
+}
+.career__section-info {
+    max-width: 500px;    
+}
+.career__section-info .title__line {
+    width: 90px
+}
+.career__section-input form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.career__section-input form input,
+.career__section-input form select {
+    max-width: 250px;
+    border-radius: 0.21em;
+    padding: 0.1rem;
+    border:none;
+
+}
+.career__section-input form textarea {
+    max-width: 350px;
+    height: 100px;
+    margin-bottom: 1rem;
+    border-radius: 0.21em;
+    border:none;
+}
+.career__section-input form label{
+    margin-top: 0.5rem;
+    
+    
+}
+*:focus {
+    outline: none;
+}
+.career__section-input-name {
+    display: flex;
+    flex-direction: row;
+    gap:1rem
+}
+.career__section-input-name div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.career__section-input-licens {
+    display: flex;
+    gap: 1rem;
+}
+.career__section-input-licens input[type="radio"] {
+    display: none;
+}
+.career__section-input-licens label{ 
+    text-align: center;
+    cursor: pointer;
+
+    background-color:rgba(139, 139, 139, 0.438);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border: 1px solid rgb(53, 53, 53);
+
+    width: 45px;
+    padding: 0.5rem;
+    
+    transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.career__section-input-licens input:nth-child(1):checked ~ label:nth-child(2){
+    background-color: var(--color-greenBtn);
+    
+} 
+.career__section-input-licens input:nth-child(3):checked ~ label:nth-child(4){
+    background-color: var(--color-greenBtn);
+    
+} 
+
+
+
+
+
+
+
+/* IMAGE*/
+.career__section__image {
+    
+}
+.career__section__image img{
+    
+    height: 500px;
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    
+    .career__section {
+        width: 700px;
+    }
+    
+   
+}
+
+@media screen and (max-width: 730px) {
+    .career__section {
+        width: 300px;
+    }
+    .career__section__image img{
+        display: none;
+    }
+    .career__section-input-name {
+        flex-direction: column;
+        gap:0rem
+    }
+  }
