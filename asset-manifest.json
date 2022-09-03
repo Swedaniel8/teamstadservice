@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.99eae9c2.css",
-    "main.js": "/react-gh-pages/static/js/main.25c353f5.js",
-    "static/media/teamstad3.jpg": "/react-gh-pages/static/media/teamstad3.ec73d7b875ba50c53bed.jpg",
-    "static/media/teamstad1.jpg": "/react-gh-pages/static/media/teamstad1.9fac765dce6238c6050d.jpg",
-    "static/media/teamstad4.jpg": "/react-gh-pages/static/media/teamstad4.476f7e8b87ced5c41ca4.jpg",
-    "static/media/teamstad2.jpg": "/react-gh-pages/static/media/teamstad2.2f4e23baa0276d201930.jpg",
-    "static/media/teamstad-contact.jpg": "/react-gh-pages/static/media/teamstad-contact.3985e8d2b34b10b0925f.jpg",
-    "static/media/fruitbasketicon.svg": "/react-gh-pages/static/media/fruitbasketicon.fc6d2ee0aaeb9814249171d7cccfb338.svg",
-    "static/media/factorypollutionicon.svg": "/react-gh-pages/static/media/factorypollutionicon.7b81550568a9bd4c2b9ed912bf136411.svg",
-    "static/media/wipinglineicon.svg": "/react-gh-pages/static/media/wipinglineicon.6bd6b3d710dc311c91e96b67927b157a.svg",
-    "static/media/carpetmattressrugicon.svg": "/react-gh-pages/static/media/carpetmattressrugicon.57f8e65d79177cc23fe82fb8a14ffc14.svg",
-    "static/media/housekeepericon.svg": "/react-gh-pages/static/media/housekeepericon.8546f9ea31f2aa4572daa7aa0acf2fe0.svg",
-    "static/media/cleaningicon.svg": "/react-gh-pages/static/media/cleaningicon.c7aa4f3678502e798bab6e88da09cad3.svg",
-    "static/media/vacuumicon.svg": "/react-gh-pages/static/media/vacuumicon.6126a589d3c22a6a297352b569f9ff89.svg",
-    "static/media/stairupicon.svg": "/react-gh-pages/static/media/stairupicon.20977c3a752d6dc463f67656b682fe15.svg",
-    "static/media/binderfileicon.svg": "/react-gh-pages/static/media/binderfileicon.1a770670d427ec2bf754314e563fd23c.svg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.99eae9c2.css.map": "/react-gh-pages/static/css/main.99eae9c2.css.map",
-    "main.25c353f5.js.map": "/react-gh-pages/static/js/main.25c353f5.js.map"
+    "main.css": "/teamstadservice/static/css/main.2459753b.css",
+    "main.js": "/teamstadservice/static/js/main.7f2a5568.js",
+    "static/media/teamstad3.jpg": "/teamstadservice/static/media/teamstad3.ec73d7b875ba50c53bed.jpg",
+    "static/media/teamstad1.jpg": "/teamstadservice/static/media/teamstad1.9fac765dce6238c6050d.jpg",
+    "static/media/teamstad4.jpg": "/teamstadservice/static/media/teamstad4.476f7e8b87ced5c41ca4.jpg",
+    "static/media/teamstad2.jpg": "/teamstadservice/static/media/teamstad2.2f4e23baa0276d201930.jpg",
+    "static/media/teamstad-contact.jpg": "/teamstadservice/static/media/teamstad-contact.3985e8d2b34b10b0925f.jpg",
+    "static/media/fruitbasketicon.svg": "/teamstadservice/static/media/fruitbasketicon.fc6d2ee0aaeb9814249171d7cccfb338.svg",
+    "static/media/factorypollutionicon.svg": "/teamstadservice/static/media/factorypollutionicon.7b81550568a9bd4c2b9ed912bf136411.svg",
+    "static/media/wipinglineicon.svg": "/teamstadservice/static/media/wipinglineicon.6bd6b3d710dc311c91e96b67927b157a.svg",
+    "static/media/carpetmattressrugicon.svg": "/teamstadservice/static/media/carpetmattressrugicon.57f8e65d79177cc23fe82fb8a14ffc14.svg",
+    "static/media/housekeepericon.svg": "/teamstadservice/static/media/housekeepericon.8546f9ea31f2aa4572daa7aa0acf2fe0.svg",
+    "static/media/cleaningicon.svg": "/teamstadservice/static/media/cleaningicon.c7aa4f3678502e798bab6e88da09cad3.svg",
+    "static/media/vacuumicon.svg": "/teamstadservice/static/media/vacuumicon.6126a589d3c22a6a297352b569f9ff89.svg",
+    "static/media/stairupicon.svg": "/teamstadservice/static/media/stairupicon.20977c3a752d6dc463f67656b682fe15.svg",
+    "static/media/binderfileicon.svg": "/teamstadservice/static/media/binderfileicon.1a770670d427ec2bf754314e563fd23c.svg",
+    "index.html": "/teamstadservice/index.html",
+    "main.2459753b.css.map": "/teamstadservice/static/css/main.2459753b.css.map",
+    "main.7f2a5568.js.map": "/teamstadservice/static/js/main.7f2a5568.js.map"
   },
   "entrypoints": [
-    "static/css/main.99eae9c2.css",
-    "static/js/main.25c353f5.js"
+    "static/css/main.2459753b.css",
+    "static/js/main.7f2a5568.js"
   ]
 }
